@@ -1,0 +1,80 @@
+(ns netnavi.plugins.chatgpt.features
+  (:require [netnavi.util :as util] 
+            [netnavi.plugins.chatgpt.gpt :as gpt]
+            [clojure.java.shell :as shell]
+            [netnavi.plugins.chatgpt.installer :as installer])
+  (:import [netnavi.assist Assistant]))
+
+;(let [result (clojure.java.shell/sh "firefox")])
+
+(defn clear
+  "A simple expression to clear a bash shell"
+  []
+  ; Uses ANSI code for 'move input to start' and "clear terminal". Does not work in all terminals
+  (print "\u001b[H\u001b[2J"))
+
+(defn init!
+  "reset the assistant back to default by mutating the record"
+  []
+  (swap! (:running-log gpt/assistant) (constantly gpt/empty-chat))
+  (clear)
+  (println (format "%sReinitialized%s" util/RED util/RESET)))
+
+(defn init
+  "rest the assistant back to default by assigning a new value"
+  []
+  (def assistant (Assistant. (atom gpt/empty-chat)))
+  (clear)
+  (println (format "%sReinitialized%s" util/RED util/RESET)))
+
+(defn strike-last-input!
+  "This form removes the last prompt/response pair"
+  []
+  (if (< (count @(:running-log gpt/assistant)) 2)
+    (println "Nothing to do!")
+    (swap! (:running-log gpt/assistant) #(subvec % 0 (- (count %) 2)))))
+
+(defn print-last-prompt []
+  (println (last @(:running-log gpt/assistant))))
+
+(defn help []
+  (println (keys (ns-publics 'netnavi.plugins.chatgpt.features))))
+
+(defn bash []
+  (shell/sh "bash"))
+
+(defn exit []
+  (System/exit 0))
+
+(defn echo
+  "Used to print the last output to a file"
+  []
+  (println "Enter filename to spit: ")
+  (let [filename (read-line)]
+    (spit filename (last @(:running-log gpt/assistant)))))
+
+; I might want this to return 
+(defn check-for-command? 
+  "Checks if a command exists. If so, it runs the command" 
+  [prompt] 
+  (let [resolved (resolve (symbol "netnavi.plugins.chatgpt.features" prompt))]
+    (if resolved
+     (do 
+       (println "Command" prompt "executed")
+       (println util/line)
+       (resolved)
+       true)
+      nil)))
+ 
+; Find a better way to do this
+(defn set-env-var 
+  "A simple wrapper for the installer expression, to set the API Key and Org info"
+  [] 
+  (installer/request-api-info))
+
+;(check-for-command? "init!")
+
+;(print netnavi.plugins.gpt/assistant)
+;(count @(:running-log netnavi.plugins.gpt/assistant))
+;(strike-last-input!)
+;(init!)
