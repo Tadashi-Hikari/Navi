@@ -38,7 +38,8 @@
   (println (last @(:running-log gpt/assistant))))
 
 (defn help []
-  (println (keys (ns-publics 'netnavi.plugins.chatgpt.features))))
+  (doseq [item (keys (ns-publics 'netnavi.plugins.chatgpt.features))]
+     (println item)))
 
 (defn bash []
   (shell/sh "bash"))
