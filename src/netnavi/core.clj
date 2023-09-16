@@ -6,11 +6,6 @@
             [netnavi.plugins.chatgpt.installer :as installer])
   (:gen-class))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
-
 (require
  '[netnavi.plugins.chatgpt.gpt :as gpt])
 
@@ -32,10 +27,12 @@
               (println util/line)))))
     (recur)))
 
-; ----- START PROGRAM HERE -----
-(installer/do-startup-check)
-(print util/BLUE (format "\n%s initalized\n%s" assistant-name util/RESET))
-(println util/line)
-(perpetual-loop)
-
 ;(print @(:running-log netnavi.plugins.gpt/assistant)) 
+
+(defn -main
+  "Launch the main loop for the Navi."
+  [& args]
+  (installer/do-startup-check)
+  (print util/BLUE (format "\n%s initalized\n%s" assistant-name util/RESET))
+  (println util/line)
+  (perpetual-loop))

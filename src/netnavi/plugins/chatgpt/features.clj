@@ -1,6 +1,6 @@
 (ns netnavi.plugins.chatgpt.features
   (:require [netnavi.util :as util] 
-            [netnavi.plugins.chatgpt.gpt :as gpt]
+            [netnavi.plugins.chatgpt.gpt :as gpt] 
             [clojure.java.shell :as shell]
             [netnavi.plugins.chatgpt.installer :as installer])
   (:import [netnavi.assist Assistant]))
@@ -52,7 +52,15 @@
   []
   (println "Enter filename to spit: ")
   (let [filename (read-line)]
-    (spit filename (last @(:running-log gpt/assistant)))))
+    (spit filename (last @(:running-log gpt/assistant)))
+    (spit filename "\n")))
+
+(defn echo-append []
+  (print "Enter filename: ")
+  (flush)
+  (let [filename (read-line)]
+    (spit filename (get (last @(:running-log gpt/assistant)) :content) :append true)
+    (spit filename "\n" :append true)))
 
 ; I might want this to return 
 (defn check-for-command? 
