@@ -35,7 +35,8 @@
     (swap! (:running-log gpt/assistant) #(subvec % 0 (- (count %) 2)))))
 
 (defn print-last-prompt []
-  (println (last @(:running-log gpt/assistant))))
+  (println (let [result (:content (last @(:running-log gpt/assistant)))]
+             (format "%s%s%s" util/RED result util/BLUE))))
 
 (defn help []
   (doseq [item (keys (ns-publics 'netnavi.plugins.chatgpt.features))]
