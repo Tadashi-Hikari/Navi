@@ -33,7 +33,7 @@
     (conj empty-chat new-map)))
 
 (defn quick-chat-with-assistant [message]
-  (get-in (api/create-chat-completion {:model "gpt-3.5-turbo"
+x  (get-in (api/create-chat-completion {:model "gpt-3.5-turbo"
                                        :messages (add-new-message message)}) [:choices 0 :message :content]))
 
 (defn chat-with-assistant 

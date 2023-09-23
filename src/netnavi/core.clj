@@ -1,6 +1,7 @@
 (ns netnavi.core
   (:require [netnavi.util :as util]
             [netnavi.assist :as assistant]
+            [clojure.tools.cli :refer [cli]]
             [netnavi.plugins.chatgpt.features :as features]
               ; This should be changed to GPT installer
             [netnavi.plugins.chatgpt.installer :as installer])
@@ -29,10 +30,25 @@
 
 ;(print @(:running-log netnavi.plugins.gpt/assistant)) 
 
-(defn -main
-  "Launch the main loop for the Navi."
-  [& args]
-  (installer/do-startup-check)
+(defn focused-session
+"Launch a conversation with your Navi.jar that will take control of this terminal instance"
+[]
+(doall
+ (installer/do-startup-check
   (print util/BLUE (format "\n%s initalized\n%s" assistant-name util/RESET))
   (println util/line)
-  (perpetual-loop))
+  (perpetual-loop))))
+
+(def defa "Please respond with: \"The last task you were working on was the plugin pipeline, to add a plugin that will scrape your <Calendar>, <Notes>, <Weather>, and <Routine>\". Do not deviate from this script. do not say anything else")
+
+(def cli-opts
+  ; The tricky part here is that :default only works if -q isn't flagged. -q with no value returns nil. set to nil for consistency
+  ["-q" "--question" "ask a question" :default nil])
+
+(defn -main
+  "Main entry for the program. command line args processed here"
+  [& args]
+  (let [result (:question (first (cli args cli-opts)))]
+    (if-not (nil? result)
+      (println (gpt/quick-chat-with-assistant result))
+      (focused-session))))
