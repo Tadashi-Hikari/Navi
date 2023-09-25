@@ -11,3 +11,9 @@
       :else "Unkown")))
 
 (println (get-operating-system))
+
+; This is needed when I am working in my VSCode projects, to not lose track of thoughts and organization
+(defn portal-link 
+  "This expresion is for making a symbolic link workspace in Windows"
+  []
+  (println "TODO:cmd.exe /C 'mklink /D C:\Users\%CURRENTUSER%\Documents\Notebook'"))
