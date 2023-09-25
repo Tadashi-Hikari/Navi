@@ -9,9 +9,13 @@ A generic command line assistant built using the Sapphire Framework and written 
 
 # How To Use
 
-To run it in a build environment, use `lein run` or `lein run -q "ask your question here. be sure to include the quotes"`
+To run it in a build environment, use:
+- `lein run` or 
+- `lein run -q "ask your question here. be sure to include the quotes"`
 
-If it has been built as an uberjar, you can use `java -jar navi.jar` or `java -jar navi.jar -q "ask your question here"`
+If it has been built as an uberjar, you can use:
+- `java -jar navi.jar` or
+- `java -jar navi.jar -q "ask your question here"`
 
 
 # History
