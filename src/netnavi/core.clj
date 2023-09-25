@@ -39,8 +39,6 @@
   (println util/line)
   (perpetual-loop))))
 
-(def defa "Please respond with: \"The last task you were working on was the plugin pipeline, to add a plugin that will scrape your <Calendar>, <Notes>, <Weather>, and <Routine>\". Do not deviate from this script. do not say anything else")
-
 (def cli-opts
   ; The tricky part here is that :default only works if -q isn't flagged. -q with no value returns nil. set to nil for consistency
   ["-q" "--question" "ask a question" :default nil])
