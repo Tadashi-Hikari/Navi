@@ -11,11 +11,12 @@ A generic command line assistant built using the Sapphire Framework and written 
 
 To run it in a build environment, use:
 - `lein run` or 
-- `lein run -q "ask your question here. be sure to include the quotes"`
+- `lein run -q "Your question here"`
 
 If it has been built as an uberjar, you can use:
 - `java -jar navi.jar` or
-- `java -jar navi.jar -q "ask your question here"`
+- `java -jar navi.jar -q "Your question here"`
 
 
 # History
+This project is the continuation of the Sapphire Framework project

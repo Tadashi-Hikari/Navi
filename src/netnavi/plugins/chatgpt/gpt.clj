@@ -1,13 +1,13 @@
 (ns netnavi.plugins.chatgpt.gpt
   (:import [netnavi.assist Assistant]) 
-  (:require [netnavi.assist :as assistant]))
+  (:require [netnavi.assist :as assistant]
+            [netnavi.plugins.chatgpt.personalities.core :as personality]))
 (require 
  '[wkok.openai-clojure.api :as api]
  '[netnavi.assist :as assistant]) 
 
 ; These two may not fit here, but was circular dependant in gpt.clj
-(def empty-chat [{:role "system" :content "You are a helpful assistant named Sapphire.EXE. your purpose is to help me manage my schedule, projects, and ADHD"}])
-(def netnavi-project-assistant-prep [{:role "system" :content "You are a helpful assistant named Sapphire.EXE. You are helping me with a clojure/clojurescript project that I am working on. The project was created using the command \"lein new luminus netnavi +shadow-cljs, +http-kit, +reitit, +sqlite, +graphql\". Most questions will come from this base frame of reference"}])
+(def empty-chat [{:role "system" :content personality/standard}])
 
 ; This should be moved to GPT Module
 (def assistant (Assistant. (atom empty-chat)))

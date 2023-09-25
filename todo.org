@@ -5,4 +5,3 @@
 ** Flag switch
 ** Live switch
 * Feed in 'default daily metrics (weather, todo, calendar)'
-
