@@ -13,6 +13,10 @@
   ; Uses ANSI code for 'move input to start' and "clear terminal". Does not work in all terminals
   (print "\u001b[H\u001b[2J"))
 
+(defn clear-emacs []
+  (dotimes [i 20]
+    (println)))
+
 (defn init!
   "reset the assistant back to default by mutating the record"
   []
