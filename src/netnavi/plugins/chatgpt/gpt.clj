@@ -42,6 +42,3 @@
   (add-new-message (log-prompt-update! message))
   (log-response-update! (get-in (api/create-chat-completion {:model "gpt-3.5-turbo"
                                        :messages @(:running-log assistant)}) [:choices 0 :message :content])))
-
-;(chat-with-assistant "Congratulations. you passed all tests with flying colors")
-;(print assistant)
