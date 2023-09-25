@@ -1,6 +1,5 @@
 (ns netnavi.core
-  (:require [netnavi.util :as util]
-            [netnavi.assist :as assistant]
+  (:require [netnavi.util :as util] 
             [clojure.tools.cli :refer [cli]]
             [netnavi.plugins.chatgpt.gpt :as gpt]
             [netnavi.plugins.chatgpt.personalities.core :as personality]

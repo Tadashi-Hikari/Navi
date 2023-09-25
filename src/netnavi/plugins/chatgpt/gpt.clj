@@ -1,16 +1,23 @@
-(ns netnavi.plugins.chatgpt.gpt
-  (:import [netnavi.assist Assistant]) 
-  (:require [netnavi.assist :as assistant]
-            [netnavi.plugins.chatgpt.personalities.core :as personality]))
-(require 
- '[wkok.openai-clojure.api :as api]
- '[netnavi.assist :as assistant]) 
+(ns netnavi.plugins.chatgpt.gpt 
+  (:require
+   [netnavi.assist :as assistant]
+   [netnavi.plugins.chatgpt.personalities.core :as personality]
+   [wkok.openai-clojure.api :as api]))
+; It wants to be a separate expression
+(import '[netnavi.assist Assistant])
 
 ; These two may not fit here, but was circular dependant in gpt.clj
 (def empty-chat [{:role "system" :content personality/standard}])
 
 ; This should be moved to GPT Module
 (def assistant (Assistant. (atom empty-chat)))
+
+(defn new-chat
+  "This expression takes a personality name, and sets up an empty chat with it"
+  [personality]
+  (cond
+    (= personality "netnavi-dev") [{:role "system" :content personality/netnavi-dev}]
+    (= personality "enlisted") [{:role "system" :content 'personality/enlisted}]))
 
 (defn format-prompt [prompt]
   (let [new-map {:role "user" :content prompt}]

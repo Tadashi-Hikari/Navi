@@ -2,6 +2,7 @@
   (:require [netnavi.util :as util] 
             [netnavi.plugins.chatgpt.gpt :as gpt] 
             [clojure.java.shell :as shell]
+            [netnavi.plugins.chatgpt.personalities.switch :as switch]
             [netnavi.plugins.chatgpt.installer :as installer])
   (:import [netnavi.assist Assistant]))
 
@@ -30,6 +31,9 @@
   (def assistant (Assistant. (atom gpt/empty-chat)))
   (clear)
   (println (format "%sReinitialized%s" util/RED util/RESET)))
+
+(defn switch-personality []
+  (switch/switch-personality))
 
 (defn strike-last-input!
   "This form removes the last prompt/response pair"
@@ -85,10 +89,3 @@
   "A simple wrapper for the installer expression, to set the API Key and Org info"
   [] 
   (installer/request-api-info))
-
-;(check-for-command? "init!")
-
-;(print netnavi.plugins.gpt/assistant)
-;(count @(:running-log netnavi.plugins.gpt/assistant))
-;(strike-last-input!)
-;(init!)

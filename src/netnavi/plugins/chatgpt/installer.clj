@@ -42,6 +42,3 @@
 ; just an idea
 (defn if-not-restarted []
   (slurp "config"))
-
-;(do-startup-check)
-;(request-api-info)
