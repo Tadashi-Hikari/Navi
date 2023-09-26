@@ -44,6 +44,14 @@
   (println (let [result (:content (last @(:running-log gpt/assistant)))]
              (format "%s%s%s" util/RED result util/BLUE))))
 
+(defn echo-transcript []
+  (print "Enter filename: ")
+  (flush) 
+  (let [filename (read-line)]
+    (doseq [index (range (count @(:running-log gpt/assistant)))]
+      (spit filename (nth @(:running-log gpt/assistant) index) :append true)
+      (spit filename "\n" :append true))))
+
 (defn help []
   (doseq [item (keys (ns-publics 'netnavi.plugins.chatgpt.features))]
      (println item)))
@@ -77,6 +85,7 @@
         (println util/line))))
 
 (defn echo-append []
+  ; This could/should be pulled from a let? then I can call it from elsewhere
   (print "Enter filename: ")
   (flush)
   (let [filename (read-line)]
