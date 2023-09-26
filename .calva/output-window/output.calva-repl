@@ -9,8 +9,8 @@
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Starting Jack-in Terminal: pushd c:\Users\ccarr\Documents\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
-; Using host:port 127.0.0.1:54116 ...
+; Starting Jack-in Terminal: pushd c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:57457 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -26,64 +26,431 @@ clj꞉netnavi.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉netnavi.core꞉> 
 ; Jack-in done.
 clj꞉netnavi.core꞉> 
+; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
+; java.awt.datatransfe.StringSelection
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:8:9).
+; Unable to resolve symbol: transferable in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
+; java.awt.datatransfer.Toolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
+; java.awt.datatransfer.Toolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
+java.awt.datatransfer.StringSelection
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error reading source at (REPL:3:61).
+; Unmatched delimiter: ]
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ArityException) at netnavi.plugins.system.clipboard/eval23502 (form-init13183414906281232261.clj:2).
+; Wrong number of args (3) passed to: :import
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import (quote [java.awt.Toolkit]) (quote [java.awt.datatransfer.Clipboard]) (quote [java.awt.datatransfer.StringSelection]))) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-; Syntax error compiling at (c:\Users\ccarr\Documents\Navi\src\netnavi\plugins\chatgpt\transcription\sandbox.clj:9:28).
-; No such namespace: gpt
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:10:5).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/copy-to-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/copy-to-clipboard (form-init13183414906281232261.clj:10).
+; No matching method setContents found taking 2 args for class sun.awt.windows.WToolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-directory
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-; Execution error (ArityException) at netnavi.plugins.chatgpt.transcription.sandbox/eval23070 (form-init16304047387754976124.clj:14).
-; Wrong number of args (0) passed to: netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: ; Execution error (IllegalArgumentException) at netnavi.plugins.chatgpt.transcription.sandbox/echo-append (form-init16304047387754976124.clj:10).
-; No matching method write found taking 1 args for class java.io.BufferedWriter
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/copy-to-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/copy-to-clipboard (form-init13183414906281232261.clj:10).
+; No matching method setContents found taking 2 args for class sun.awt.windows.WToolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/copy-to-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:13:19).
+; com.sun.jna.platform.Clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (FileNotFoundException) at netnavi.plugins.system.clipboard/eval23536$loading (form-init13183414906281232261.clj:1).
+; Could not locate com/sun/jna/platform/Clipboard__init.class, com/sun/jna/platform/Clipboard.clj or com/sun/jna/platform/Clipboard.cljc on classpath.
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-; Syntax error reading source at (REPL:11:14).
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/get-string-from-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-string-from-clipboard (form-init13183414906281232261.clj:15).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/get-string-from-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-string-from-clipboard (form-init13183414906281232261.clj:15).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt Toolkit] [javax.swing.TransferHandler] [java.awt.datatransfer Clipboard] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:16:26).
+; getClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/clipboard->string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+Clipboard contents:  #function[netnavi.plugins.system.clipboard/clipboard->string]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+Clipboard contents:  #function[netnavi.plugins.system.clipboard/clipboard->string]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/clipboard->string (form-init13183414906281232261.clj:16).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/get-clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
+; No matching field found: contents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/get-clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
+; No matching field found: contents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
+; No matching field found: contents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:15:22).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23611 (form-init13183414906281232261.clj:17).
+; No matching field found: contents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:17:23).
+; Unable to resolve symbol: datatransfer in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :as Clipboard] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :as [Clipboard]] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
+; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :use [Clipboard]] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:22).
+; Expecting var, but Clipboard is mapped to class java.awt.datatransfer.Clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/self-get-clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:22:5).
+; Unable to resolve symbol: get-contents in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:22:5).
+; No matching method get_contents found taking 1 args for class java.awt.datatransfer.Clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:1).
+; get_contents
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23628 (form-init13183414906281232261.clj:24).
+; No matching field found: get_contents for class java.lang.Class
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23630 (form-init13183414906281232261.clj:24).
+; No matching field found: get_contents for class netnavi.plugins.system.clipboard$clipboard__GT_string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:1).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:16).
+; Unable to find static field: getDefaultToolkit in class java.awt.Toolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23634 (form-init13183414906281232261.clj:24).
+; No matching field found: get_contents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error reading source at (REPL:21:1).
+; EOF while reading string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error reading source at (REPL:20:19).
 ; Unmatched delimiter: )
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: ; Execution error (FileNotFoundException) at java.io.FileOutputStream/open0 (FileOutputStream.java:-2).
-; test (Access is denied)
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.features/echo
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-#'netnavi.plugins.chatgpt.transcription.sandbox/echo-append
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
-Enter filename: nil
-clj꞉netnavi.plugins.chatgpt.transcription.sandbox꞉> 
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
+; Unable to resolve symbol: ->clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
+; Unable to resolve symbol: pboardOwner in this context
+; 
+; Syntax error reading source at (REPL:5:74).
+; Unmatched delimiter: ]
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error reading source at (REPL:3:45).
+; Unmatched delimiter: ]
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
+; java.awt.datatransfer.->clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
+; java.awt.datatransfer.Clipboard$->clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
+; Unable to resolve symbol: ->clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
+; Unable to resolve symbol: ->clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error reading source at (REPL:20:45).
+; Unsupported character: \->clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
+; _GT_clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23659 (form-init13183414906281232261.clj:21).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:17).
+; Expecting var, but StringSelection is mapped to class java.awt.datatransfer.StringSelection
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
+; Expecting var, but StringSelection is mapped to class java.awt.datatransfer.StringSelection
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23663 (form-init13183414906281232261.clj:20).
+; class sun.awt.windows.WClipboard cannot be cast to class java.lang.String (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; java.lang.String is in module java.base of loader 'bootstrap')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
+; Unable to resolve symbol: get-contents in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
+; Unable to resolve classname: get-contents
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23673 (form-init13183414906281232261.clj:21).
+; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23675 (form-init13183414906281232261.clj:21).
+; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23677 (form-init13183414906281232261.clj:21).
+; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:18).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; Unable to resolve classname: clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; No matching method getData found taking 1 args for class java.awt.datatransfer.Clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; No matching method getData found taking 2 args for class java.awt.datatransfer.Clipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23686 (form-init13183414906281232261.clj:21).
+; No matching method clipboard found taking 1 args for class java.lang.Class
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23688 (form-init13183414906281232261.clj:21).
+; No matching method _get_data found taking 1 args for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; No matching method get_data found taking 1 args for class java.awt.Toolkit
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
+; Unable to resolve symbol: clipboard in this context
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23692 (form-init13183414906281232261.clj:21).
+; No matching method getContents found taking 2 args for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.ClipboardTransferable 0x318fa364 sun.awt.datatransfer.ClipboardTransferable@318fa364]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23696 (form-init13183414906281232261.clj:21).
+; class sun.awt.datatransfer.ClipboardTransferable cannot be cast to class java.util.concurrent.Future (sun.awt.datatransfer.ClipboardTransferable is in module java.desktop of loader 'bootstrap'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+sun.awt.datatransfer.ClipboardTransferable@46d5a65
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23700 (form-init13183414906281232261.clj:21).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23702 (form-init13183414906281232261.clj:21).
+; No matching field found: getContents for class sun.awt.windows.WClipboard
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.ClipboardTransferable 0x6a76be35 sun.awt.datatransfer.ClipboardTransferable@6a76be35]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+ DataFlavor/stringFlavor
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+ DataFlavor/stringFlavor
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.ClipboardTransferable 0x3b6b7b4e sun.awt.datatransfer.ClipboardTransferable@3b6b7b4e]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
+; Unable to resolve symbol: clipboard in this context
+; 
+; Syntax error reading source at (REPL:21:56).
+; Unmatched delimiter: )
+clj꞉netnavi.plugins.system.clipboard꞉> 
+ DataFlavor/stringFlavor
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23714 (form-init13183414906281232261.clj:21).
+; No matching field found: getTransferData for class java.lang.String
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23716 (form-init13183414906281232261.clj:21).
+; No matching field found: getTransferData for class sun.awt.datatransfer.ClipboardTransferable
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.ClipboardTransferable 0x59184265 sun.awt.datatransfer.ClipboardTransferable@59184265]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+DataFlavor/stringFlavor
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23722 (form-init13183414906281232261.clj:21).
+; No matching method StringSelection found taking 1 args for class sun.awt.datatransfer.ClipboardTransferable
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23724 (form-init13183414906281232261.clj:21).
+; No matching field found: StringSelection for class sun.awt.datatransfer.ClipboardTransferable
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23726 (form-init13183414906281232261.clj:21).
+; No matching field found: getDefaultRepresentationClassAsString for class sun.awt.datatransfer.ClipboardTransferable
+clj꞉netnavi.plugins.system.clipboard꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:21).
+; class sun.awt.datatransfer.ClipboardTransferable cannot be cast to class clojure.lang.IFn (sun.awt.datatransfer.ClipboardTransferable is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.ClipboardTransferable 0x1eaae74d sun.awt.datatransfer.ClipboardTransferable@1eaae74d]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:21)
+netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:20)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3215)
+clojure.core/eval (core.clj:3211)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#object[sun.awt.datatransfer.TransferableProxy 0xbac48df sun.awt.datatransfer.TransferableProxy@bac48df]
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+testing
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+tester
+Clipboard contents:  nil
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+Clipboard contents: " (clipboard-string)
+Clipboard contents: null
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+tester
+Clipboard contents: null
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+#'netnavi.plugins.system.clipboard/clipboard-string
+clj꞉netnavi.plugins.system.clipboard꞉> 
+Clipboard contents: tester
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
+Clipboard contents: Better is bread with a happy heart, then wealth with vexation
+nil
+clj꞉netnavi.plugins.system.clipboard꞉> 
