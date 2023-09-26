@@ -16,4 +16,4 @@
 (defn portal-link 
   "This expresion is for making a symbolic link workspace in Windows"
   []
-  (println "TODO:cmd.exe /C 'mklink /D C:\Users\%CURRENTUSER%\Documents\Notebook'"))
+  (println "TODO:cmd.exe /C 'mklink /D C:\\Users\\%CURRENTUSER%\\Documents\\Notebook'"))
