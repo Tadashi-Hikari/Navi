@@ -2,7 +2,9 @@
   (:require [netnavi.util :as util] 
             [netnavi.plugins.chatgpt.gpt :as gpt] 
             [clojure.java.shell :as shell]
-            [netnavi.plugins.chatgpt.installer :as installer])
+            [netnavi.plugins.chatgpt.installer :as installer]
+            [netnavi.plugins.system.clipboard :as clipboard]
+            [netnavi.plugins.chatgpt.personalities.core :as personality])
   (:import [netnavi.assist Assistant]))
 
 ;(let [result (clojure.java.shell/sh "firefox")])
@@ -24,13 +26,6 @@
   (clear)
   (println (format "%sReinitialized%s" util/RED util/RESET)))
 
-(defn init
-  "rest the assistant back to default by assigning a new value"
-  []
-  (def assistant (Assistant. (atom gpt/empty-chat)))
-  (clear)
-  (println (format "%sReinitialized%s" util/RED util/RESET)))
-
 (defn strike-last-input!
   "This form removes the last prompt/response pair"
   []
@@ -38,7 +33,14 @@
     (println "Nothing to do!")
     (swap! (:running-log gpt/assistant) #(subvec % 0 (- (count %) 2)))))
 
+(defn print-running-log []
+  (println @(:running-log gpt/assistant)))
+
 (defn print-last-prompt []
+  (println (let [result (:content (get @(:running-log gpt/assistant) (- (count @(:running-log gpt/assistant)) 2)))]
+             (format "%s%s%s" util/RED result util/BLUE))))
+
+(defn print-last-response []
   (println (let [result (:content (last @(:running-log gpt/assistant)))]
              (format "%s%s%s" util/RED result util/BLUE))))
 
@@ -59,6 +61,20 @@
   (let [filename (read-line)]
     (spit filename (last @(:running-log gpt/assistant)))
     (spit filename "\n")))
+
+; TODO: Break this out a bit more
+(defn c-clip 
+  "Append the clipboards text to the next message"
+  []
+  (print (format "%sWhat would you like to say to %s:%s" util/GREEN personality/navi-name util/RESET) "")
+  (flush)
+  ; This is almost the (perpetual-loop) expression in netnavi.core
+  (let [text (clipboard/get-clipboard-string)
+        input (read-line)
+        added-data (str (format "The following data has been attached as supplementary to the prior text. Please consider it in your response: %s" text))] 
+    (do (println util/line)
+        (println util/RED (gpt/chat-with-assistant (format "%s %s" input added-data)) util/RESET)
+        (println util/line))))
 
 (defn echo-append []
   (print "Enter filename: ")

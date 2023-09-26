@@ -12,7 +12,7 @@
     (println "Subprocess output:")
     (println (:out process))))
 
-;(run-subprocess "echo \"hello\"")
+;(run-subprocess "echo \"hello\""
 
 (defn setup-user-environment [])
 
