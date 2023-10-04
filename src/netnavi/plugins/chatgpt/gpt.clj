@@ -2,7 +2,7 @@
   (:import [netnavi.assist Assistant]) 
   (:require [netnavi.assist :as assistant]
             [netnavi.plugins.chatgpt.personalities.core :as personality]))
-(require 
+(require
  '[wkok.openai-clojure.api :as api]
  '[netnavi.assist :as assistant]) 
 

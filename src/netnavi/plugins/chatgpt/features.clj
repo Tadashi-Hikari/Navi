@@ -26,6 +26,9 @@
   (clear)
   (println (format "%sReinitialized%s" util/RED util/RESET)))
 
+(defn init []
+  (init!))
+
 (defn strike-last-input!
   "This form removes the last prompt/response pair"
   []
