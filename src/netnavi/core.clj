@@ -46,7 +46,7 @@
   [& args]
   (let [input (:question (first (cli args cli-opts)))]
     (if-not (nil? input)
-      (doall
+      (do
         (external/init-external-assist)
         (external/append-to-current-assistant-memory input)
         (external/append-to-memory (gpt/format-prompt input))
