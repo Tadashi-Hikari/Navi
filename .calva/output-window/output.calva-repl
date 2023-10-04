@@ -9,8 +9,8 @@
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Starting Jack-in Terminal: pushd c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
-; Using host:port 127.0.0.1:57457 ...
+; Starting Jack-in Terminal: pushd c:\Users\ccarroll\Documents\GitHub\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:63625 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -26,537 +26,105 @@ clj꞉netnavi.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉netnavi.core꞉> 
 ; Jack-in done.
 clj꞉netnavi.core꞉> 
-; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
-; java.awt.datatransfe.StringSelection
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:8:9).
-; Unable to resolve symbol: transferable in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
-; java.awt.datatransfer.Toolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
-; java.awt.datatransfer.Toolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-java.awt.datatransfer.StringSelection
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error reading source at (REPL:3:61).
-; Unmatched delimiter: ]
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ArityException) at netnavi.plugins.system.clipboard/eval23502 (form-init13183414906281232261.clj:2).
-; Wrong number of args (3) passed to: :import
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import (quote [java.awt.Toolkit]) (quote [java.awt.datatransfer.Clipboard]) (quote [java.awt.datatransfer.StringSelection]))) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt.Toolkit] [java.awt.datatransfer.Clipboard] [java.awt.datatransfer.StringSelection])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:10:5).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/copy-to-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/copy-to-clipboard (form-init13183414906281232261.clj:10).
-; No matching method setContents found taking 2 args for class sun.awt.windows.WToolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/copy-to-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/copy-to-clipboard (form-init13183414906281232261.clj:10).
-; No matching method setContents found taking 2 args for class sun.awt.windows.WToolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/copy-to-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:13:19).
-; com.sun.jna.platform.Clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (FileNotFoundException) at netnavi.plugins.system.clipboard/eval23536$loading (form-init13183414906281232261.clj:1).
-; Could not locate com/sun/jna/platform/Clipboard__init.class, com/sun/jna/platform/Clipboard.clj or com/sun/jna/platform/Clipboard.cljc on classpath.
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/get-string-from-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-string-from-clipboard (form-init13183414906281232261.clj:15).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/get-string-from-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-string-from-clipboard (form-init13183414906281232261.clj:15).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt Toolkit] [javax.swing.TransferHandler] [java.awt.datatransfer Clipboard] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:16:26).
-; getClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/clipboard->string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-Clipboard contents:  #function[netnavi.plugins.system.clipboard/clipboard->string]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-Clipboard contents:  #function[netnavi.plugins.system.clipboard/clipboard->string]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/clipboard->string (form-init13183414906281232261.clj:16).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/get-clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
-; No matching field found: contents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/get-clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
-; No matching field found: contents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/get-clipboard-string (form-init13183414906281232261.clj:17).
-; No matching field found: contents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:15:22).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23611 (form-init13183414906281232261.clj:17).
-; No matching field found: contents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:17:23).
-; Unable to resolve symbol: datatransfer in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :as Clipboard] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :as [Clipboard]] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error macroexpanding clojure.core/ns at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:1).
-; ((:import [java.awt Toolkit] [java.awt.datatransfer Clipboard :use [Clipboard]] [java.awt.datatransfer StringSelection] [java.awt.datatransfer Transferable DataFlavor ClipboardOwner])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:22).
-; Expecting var, but Clipboard is mapped to class java.awt.datatransfer.Clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/self-get-clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:22:5).
-; Unable to resolve symbol: get-contents in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:22:5).
-; No matching method get_contents found taking 1 args for class java.awt.datatransfer.Clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:1).
-; get_contents
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23628 (form-init13183414906281232261.clj:24).
-; No matching field found: get_contents for class java.lang.Class
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23630 (form-init13183414906281232261.clj:24).
-; No matching field found: get_contents for class netnavi.plugins.system.clipboard$clipboard__GT_string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:1).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:24:16).
-; Unable to find static field: getDefaultToolkit in class java.awt.Toolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23634 (form-init13183414906281232261.clj:24).
-; No matching field found: get_contents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error reading source at (REPL:21:1).
-; EOF while reading string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error reading source at (REPL:20:19).
-; Unmatched delimiter: )
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
-; Unable to resolve symbol: ->clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
-; Unable to resolve symbol: pboardOwner in this context
-; 
-; Syntax error reading source at (REPL:5:74).
-; Unmatched delimiter: ]
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error reading source at (REPL:3:45).
-; Unmatched delimiter: ]
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassNotFoundException) at java.net.URLClassLoader/findClass (URLClassLoader.java:445).
-; java.awt.datatransfer.->clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
-; java.awt.datatransfer.Clipboard$->clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
-; Unable to resolve symbol: ->clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
-; Unable to resolve symbol: ->clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error reading source at (REPL:20:45).
-; Unsupported character: \->clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (NoSuchFieldException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:20:1).
-; _GT_clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23659 (form-init13183414906281232261.clj:21).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:17).
-; Expecting var, but StringSelection is mapped to class java.awt.datatransfer.StringSelection
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
-; Expecting var, but StringSelection is mapped to class java.awt.datatransfer.StringSelection
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23663 (form-init13183414906281232261.clj:20).
-; class sun.awt.windows.WClipboard cannot be cast to class java.lang.String (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; java.lang.String is in module java.base of loader 'bootstrap')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
-; Unable to resolve symbol: get-contents in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:3).
-; Unable to resolve classname: get-contents
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23673 (form-init13183414906281232261.clj:21).
-; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23675 (form-init13183414906281232261.clj:21).
-; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23677 (form-init13183414906281232261.clj:21).
-; class sun.awt.windows.WClipboard cannot be cast to class clojure.lang.IFn (sun.awt.windows.WClipboard is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:18).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; Unable to resolve classname: clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; No matching method getData found taking 1 args for class java.awt.datatransfer.Clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; No matching method getData found taking 2 args for class java.awt.datatransfer.Clipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23686 (form-init13183414906281232261.clj:21).
-; No matching method clipboard found taking 1 args for class java.lang.Class
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23688 (form-init13183414906281232261.clj:21).
-; No matching method _get_data found taking 1 args for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (IllegalArgumentException) compiling . at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; No matching method get_data found taking 1 args for class java.awt.Toolkit
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:21:12).
-; Unable to resolve symbol: clipboard in this context
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23692 (form-init13183414906281232261.clj:21).
-; No matching method getContents found taking 2 args for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.ClipboardTransferable 0x318fa364 sun.awt.datatransfer.ClipboardTransferable@318fa364]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23696 (form-init13183414906281232261.clj:21).
-; class sun.awt.datatransfer.ClipboardTransferable cannot be cast to class java.util.concurrent.Future (sun.awt.datatransfer.ClipboardTransferable is in module java.desktop of loader 'bootstrap'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-sun.awt.datatransfer.ClipboardTransferable@46d5a65
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23700 (form-init13183414906281232261.clj:21).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23702 (form-init13183414906281232261.clj:21).
-; No matching field found: getContents for class sun.awt.windows.WClipboard
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.ClipboardTransferable 0x6a76be35 sun.awt.datatransfer.ClipboardTransferable@6a76be35]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
- DataFlavor/stringFlavor
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
- DataFlavor/stringFlavor
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.ClipboardTransferable 0x3b6b7b4e sun.awt.datatransfer.ClipboardTransferable@3b6b7b4e]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\system\clipboard.clj:1:7964).
-; Unable to resolve symbol: clipboard in this context
-; 
-; Syntax error reading source at (REPL:21:56).
-; Unmatched delimiter: )
-clj꞉netnavi.plugins.system.clipboard꞉> 
- DataFlavor/stringFlavor
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23714 (form-init13183414906281232261.clj:21).
-; No matching field found: getTransferData for class java.lang.String
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23716 (form-init13183414906281232261.clj:21).
-; No matching field found: getTransferData for class sun.awt.datatransfer.ClipboardTransferable
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.ClipboardTransferable 0x59184265 sun.awt.datatransfer.ClipboardTransferable@59184265]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-DataFlavor/stringFlavor
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23722 (form-init13183414906281232261.clj:21).
-; No matching method StringSelection found taking 1 args for class sun.awt.datatransfer.ClipboardTransferable
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23724 (form-init13183414906281232261.clj:21).
-; No matching field found: StringSelection for class sun.awt.datatransfer.ClipboardTransferable
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (IllegalArgumentException) at netnavi.plugins.system.clipboard/eval23726 (form-init13183414906281232261.clj:21).
-; No matching field found: getDefaultRepresentationClassAsString for class sun.awt.datatransfer.ClipboardTransferable
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:21).
-; class sun.awt.datatransfer.ClipboardTransferable cannot be cast to class clojure.lang.IFn (sun.awt.datatransfer.ClipboardTransferable is in module java.desktop of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.ClipboardTransferable 0x1eaae74d sun.awt.datatransfer.ClipboardTransferable@1eaae74d]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:21)
-netnavi.plugins.system.clipboard/eval23728 (form-init13183414906281232261.clj:20)
-clojure.lang.Compiler/eval (Compiler.java:7194)
-clojure.core/eval (core.clj:3215)
-clojure.core/eval (core.clj:3211)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.core/apply (core.clj:667)
-clojure.core/with-bindings* (core.clj:1990)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.main/repl (main.clj:437)
-clojure.main/repl (main.clj:458)
-clojure.main/repl (main.clj:368)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
-nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
-nrepl.middleware.session/session-exec (session.clj:218)
-nrepl.middleware.session/session-exec (session.clj:217)
-java.lang.Thread/run (Thread.java:833)
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#object[sun.awt.datatransfer.TransferableProxy 0xbac48df sun.awt.datatransfer.TransferableProxy@bac48df]
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-testing
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-tester
-Clipboard contents:  nil
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-Clipboard contents: " (clipboard-string)
-Clipboard contents: null
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-tester
-Clipboard contents: null
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-#'netnavi.plugins.system.clipboard/clipboard-string
-clj꞉netnavi.plugins.system.clipboard꞉> 
-Clipboard contents: tester
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-Clipboard contents: Better is bread with a happy heart, then wealth with vexation
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:67:14).
-; No such namespace: clipboard
+#'netnavi.plugins.chatgpt.external/memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Evaluating file: external.clj
+; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:15:16).
+; Unable to resolve classname: Assistant
+; Evaluation of file external.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Evaluating file: assist.clj
+netnavi.assist.Assistant
+clj꞉netnavi.assist꞉> 
+; Evaluating file: features.clj
+#'netnavi.plugins.chatgpt.features/set-env-var
 clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:2:3).
-; netnavi.util
-clj꞉user꞉> 
-nil
-clj꞉netnavi.plugins.system.clipboard꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:2:3).
-; netnavi.util
-clj꞉user꞉> 
-"test"
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:1:7964).
-; Unable to resolve symbol: text in this context
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:69:10).
-; No such namespace: personality
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:2:3).
-; netnavi.util
-clj꞉user꞉> 
-; Jacking in...
+; Evaluating file: core.clj
+#'netnavi.plugins.chatgpt.personalities.core/guru
+clj꞉netnavi.plugins.chatgpt.personalities.core꞉> 
+; Evaluating file: external.clj
+; Syntax error (IllegalArgumentException) compiling new at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:15:16).
+; Unable to resolve classname: Assistant
+; Evaluation of file external.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Evaluating file: external.clj
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
 ; Connecting using "undefined" project type.
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Aborting jack-in. No project type selected.
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; nREPL connection failed: Error: read ECONNRESET
-; Failed connecting.
-; nREPL Connection was closed
-; Starting Jack-in Terminal: pushd c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
-; Using host:port 127.0.0.1:60007 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Aborting connect, error determining connect sequence.
+; Evaluating file: external.clj
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (FileNotFoundException) at java.io.FileOutputStream/open0 (FileOutputStream.java:-2).
+; memory\desktop.memory (The system cannot find the path specified)
+clj꞉netnavi.plugins.chatgpt.external꞉> 
 nil
-clj꞉netnavi.core꞉> 
-clj꞉netnavi.core꞉> 
-; Jack-in done.
-clj꞉netnavi.core꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\util.clj:1:7963).
-; netnavi.plugins.chatgpt.util
-; 
-; Syntax error reading source at (REPL:2:34).
-; Unmatched delimiter: )
-clj꞉user꞉> 
-; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\util.clj:1:7963).
-; netnavi.plugins.chatgpt.util
-; 
-; Syntax error reading source at (REPL:2:34).
-; Unmatched delimiter: )
-clj꞉user꞉> 
-; Evaluating file: util.clj
-#'netnavi.plugins.chatgpt.util/check-for-config
-clj꞉user꞉> 
-; Evaluating file: util.clj
-#'netnavi.plugins.chatgpt.util/check-for-config
-clj꞉netnavi.plugins.chatgpt.util꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Execution error (ClassCastException) at netnavi.plugins.chatgpt.features/eval23636 (form-init2378673897285805897.clj:113).
-; class netnavi.assist.Assistant cannot be cast to class clojure.lang.IFn (netnavi.assist.Assistant is in unnamed module of loader clojure.lang.DynamicClassLoader @291120f4; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#netnavi.assist.Assistant{:running-log #atom[[{:role system, :content You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD}] 0x18163b5b]}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
 nil
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error macroexpanding clojure.core/let at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:44:12).
-; [result (:content) (- (count (clojure.core/deref (:running-log gpt/assistant)) 2))] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error macroexpanding clojure.core/let at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:44:12).
-; [result (:content) (- (count (:running-log gpt/assistant) 2))] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Heimdall\portal\Navi\src\netnavi\plugins\chatgpt\features.clj:1:7963).
-; Unable to resolve symbol: result in this context
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/print-last-prompt
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/print-last-prompt
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/print-running-log
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
-#'netnavi.plugins.chatgpt.features/c-clip
-clj꞉netnavi.plugins.chatgpt.features꞉> 
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+-----------------------------------------
+ The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start. 
+-----------------------------------------
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/load-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.chatgpt.external/eval23607 (form-init12602118191813167435.clj:40).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.chatgpt.external/eval23609 (form-init12602118191813167435.clj:40).
+; class clojure.lang.PersistentVector cannot be cast to class clojure.lang.IAtom2 (clojure.lang.PersistentVector and clojure.lang.IAtom2 are in unnamed module of loader 'app')
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.chatgpt.external/eval23611 (form-init12602118191813167435.clj:40).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ArityException) at netnavi.plugins.chatgpt.external/eval23613 (form-init12602118191813167435.clj:40).
+; Wrong number of args (2) passed to: clojure.core/assoc--5481
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/save-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
