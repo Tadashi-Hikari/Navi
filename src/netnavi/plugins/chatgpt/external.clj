@@ -1,10 +1,7 @@
 (ns netnavi.plugins.chatgpt.external 
   (:import [netnavi.assist Assistant])
-  (:require [netnavi.plugins.chatgpt.features :as features]
-            [netnavi.plugins.chatgpt.gpt :as gpt]
-            [netnavi.util :as util]
-            [netnavi.assist :as assistant]
-            [netnavi.plugins.chatgpt.personalities.core :as personality]))
+  (:require [netnavi.assist :as assistant]
+            [netnavi.plugins.chatgpt.gpt :as gpt]))
 
 (require
  '[wkok.openai-clojure.api :as api]

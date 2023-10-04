@@ -593,3 +593,24 @@ clj꞉netnavi.core꞉> 
 clj꞉netnavi.core꞉> 
 #'netnavi.core/-main
 clj꞉netnavi.core꞉> 
+
+; Evaluating file: external.clj
+#'netnavi.plugins.chatgpt.external/append-to-current-assistant-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Evaluating file: features.clj
+#'netnavi.plugins.chatgpt.features/set-env-var
+clj꞉netnavi.plugins.chatgpt.features꞉> 
+; Evaluating file: gpt.clj
+#'netnavi.plugins.chatgpt.gpt/chat-with-assistant
+clj꞉netnavi.plugins.chatgpt.gpt꞉> 
+; Evaluating file: external.clj
+#'netnavi.plugins.chatgpt.external/append-to-current-assistant-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 

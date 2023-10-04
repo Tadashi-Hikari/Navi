@@ -1,1 +1,3 @@
 {:role "system", :content "You are a helpful assistant named Navi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+{:role "user", :content "This is a test. Are you functioning normally?"}
+{:role "assistant", :content "Yes, I am functioning normally. How can I assist you today?"}

@@ -4,8 +4,7 @@
             [clojure.java.shell :as shell]
             [netnavi.plugins.chatgpt.installer :as installer]
             [netnavi.plugins.system.clipboard :as clipboard]
-            [netnavi.plugins.chatgpt.personalities.core :as personality])
-  (:import [netnavi.assist Assistant]))
+            [netnavi.plugins.chatgpt.personalities.core :as personality]))
 
 ;(let [result (clojure.java.shell/sh "firefox")])
 

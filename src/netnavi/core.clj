@@ -46,15 +46,15 @@
   [& args]
   (let [input (:question (first (cli args cli-opts)))]
     (if-not (nil? input)
-      (do
-        (do
-          (external/init-external-assist)
-          (external/append-to-current-assistant-memory input)
-          (external/append-to-memory (gpt/format-prompt input))
-           ; This pulls from the global atomic :running-log. No need for input var
-          (let [temp (gpt/format-response (external/external-chat-with-assistant))]
-            (external/append-to-current-assistant-memory temp)
-            (external/append-to-memory temp)))
+      (doall
+        (external/init-external-assist)
+        (external/append-to-current-assistant-memory input)
+        (external/append-to-memory (gpt/format-prompt input))
+        (flush)
+           ; This pulls from the global atomic :running-log. No need for input var 
+        (let [temp (gpt/format-response (external/external-chat-with-assistant))]
+          (external/append-to-current-assistant-memory temp)
+          (external/append-to-memory temp))
            ; Print the result
-        (println @(:content (last @(:running-log external/assistant)))))
-      (focused-session))))
+        (println (:content (last @(:running-log external/assistant)))))
+    (focused-session))))
