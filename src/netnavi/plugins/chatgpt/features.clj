@@ -22,7 +22,7 @@
 (defn init!
   "reset the assistant back to default by mutating the record"
   []
-  (swap! (:running-log gpt/assistant) (constantly gpt/empty-chat))
+  (reset! (:running-log gpt/assistant) gpt/empty-chat)
   (clear)
   (println (format "%sReinitialized%s" util/RED util/RESET)))
 

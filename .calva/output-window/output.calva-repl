@@ -128,3 +128,468 @@ nil
 clj꞉netnavi.plugins.chatgpt.external꞉> 
 "{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n"
 clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/append-to-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:2:3).
+; netnavi.util
+clj꞉user꞉> 
+; Evaluating file: util.clj
+#'netnavi.plugins.chatgpt.util/check-for-config
+clj꞉netnavi.plugins.chatgpt.util꞉> 
+; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:2:3).
+; netnavi.util
+clj꞉user꞉> 
+; Syntax error (ClassNotFoundException) compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:2:3).
+; netnavi.util
+clj꞉user꞉> 
+nil
+clj꞉netnavi.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:50:36).
+; Unable to resolve symbol: format-prompt in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉netnavi.core꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 
+; Evaluating file: core.clj
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:51:36).
+; No such var: gpt/format-result
+clj꞉netnavi.core꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:52:16).
+; Unable to resolve symbol: assistant in this context
+clj꞉netnavi.core꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:50:36).
+; Unable to resolve symbol: result in this context
+clj꞉netnavi.core꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 
+"{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n{:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:45:3).
+; No such namespace: external
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:46:21).
+; Unable to resolve symbol: input in this context
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+{:role "assistant",
+ :content
+ "The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ArityException) at netnavi.plugins.chatgpt.external/eval23924 (form-init12602118191813167435.clj:50).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What is the purpose of Dev-Ops and DevSecOps. please be concise"}
+ {:role "assistant",
+  :content
+  "The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/external-chat-with-assistant
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/init-external-assist
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ExceptionInfo) at schema-tools.coerce/coerce-or-error! (coerce.cljc:24).
+; Could not coerce value to schema: {:body {:messages (not (sequential? a-java.lang.String))}}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What is the purpose of Dev-Ops and DevSecOps. please be concise"}
+ {:role "assistant",
+  :content
+  "The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/init-external-assist
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What is the purpose of Dev-Ops and DevSecOps. please be concise"}
+ {:role "assistant",
+  :content
+  "The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/assistant
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/assistant
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"[{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"} {:role \"user\", :content \"What is the purpose of Dev-Ops and DevSecOps. please be concise\"} {:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}]\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"[{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"} {:role \"user\", :content \"What is the purpose of Dev-Ops and DevSecOps. please be concise\"} {:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}]\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"[{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"} {:role \"user\", :content \"What is the purpose of Dev-Ops and DevSecOps. please be concise\"} {:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}]\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"[{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"} {:role \"user\", :content \"What is the purpose of Dev-Ops and DevSecOps. please be concise\"} {:role \"assistant\", :content \"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start.\"}]\n{:role \"user\", :content \"How are you?\"}\n{:role \"assistant\", :content \"I am well, thank you! How are you?\"}\n"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/assistant
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/read-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error at netnavi.plugins.chatgpt.external/read-memory-file (form-init12602118191813167435.clj:66).
+; EOF while reading
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error at netnavi.plugins.chatgpt.external/read-memory-file (form-init12602118191813167435.clj:66).
+; EOF while reading
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error at netnavi.plugins.chatgpt.external/read-memory-file (form-init12602118191813167435.clj:66).
+; EOF while reading
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+""
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/write-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/write-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/write-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error at netnavi.plugins.chatgpt.external/read-memory-file (form-init12602118191813167435.clj:66).
+; EOF while reading
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/read-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[nil nil nil nil nil nil]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/read-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+["{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"
+ "{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"
+ "{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"
+ "{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"
+ "{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"
+ "{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}"]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/read-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> (Clear)
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\.calva\output-window\output.calva-repl:363:40).
+; Unable to resolve symbol: Clear in this context
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"{:role \"system\", :content \"You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD\"}\n{:role \"user\", :content \"What color is the complement to red\"}\n{:role \"assistant\", :content \"The color that complements red is green\"}"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/init-external-assist
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.chatgpt.external/init-external-assist (form-init12602118191813167435.clj:31).
+; class clojure.lang.PersistentVector cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentVector and clojure.lang.IAtom are in unnamed module of loader 'app')
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/load-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/load-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ArityException) at netnavi.plugins.chatgpt.external/load-memory (form-init12602118191813167435.clj:28).
+; Wrong number of args (3) passed to: clojure.lang.PersistentVector
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/try-memory-loader
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (ClassCastException) at netnavi.plugins.chatgpt.external/try-memory-loader (form-init12602118191813167435.clj:31).
+; class java.lang.String cannot be cast to class java.io.BufferedReader (java.lang.String and java.io.BufferedReader are in module java.base of loader 'bootstrap')
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/load-memory-file
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/init-external-assist
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+nil
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error reading source at (REPL:54:49).
+; Unmatched delimiter: )
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ (What color is the complement{:role "user", :content  to red})
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "system",
+  :content
+  "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+{:role "assistant",
+ :content
+ "The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"The purpose of DevOps is to improve collaboration and streamline processes between development and operations teams in order to deliver software faster and more reliably. DevSecOps expands on this by integrating security practices throughout the entire software development lifecycle to ensure that applications are secure and compliant from the start."
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"The color that complements red is green"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"The color that complements red is green"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/external-chat-with-assistant
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"The color that complements red is green"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+(:role "system",[i
+                 :content
+                 "You are a helpful assistant namedNavi.jar. your purpose is to help me manage my schedule, projects, and ADHD"])
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error at netnavi.plugins.chatgpt.external/load-memory-file$fn (form-init12602118191813167435.clj:27).
+; EOF while reading
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; REPL history clearedclj꞉netnavi.plugins.chatgpt.external꞉> "The color that complements red is green"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant named Navi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:47:41).
+; Unable to resolve symbol: format-response in this context
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:53:5).
+; Unable to resolve symbol: append-to-current-assistant-memory in this context
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/append-to-current-assistant-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (NullPointerException) at netnavi.plugins.chatgpt.external/eval24237 (form-init12602118191813167435.clj:54).
+; Cannot invoke "java.util.concurrent.Future.get()" because "fut" is null
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+#'netnavi.plugins.chatgpt.external/append-to-current-assistant-memory
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+"what about blue?"
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:66:3).
+; Unable to resolve symbol: assistant in this context
+clj꞉user꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\plugins\chatgpt\external.clj:66:3).
+; Unable to resolve symbol: assistant in this context
+clj꞉user꞉> 
+[{:role "system",
+  :content
+  "You are a helpful assistant named Navi.jar. your purpose is to help me manage my schedule, projects, and ADHD"}
+ {:role "user", :content "What color is the complement to red"}
+ {:role "assistant", :content "The color that complements red is green"}
+ {:role "user", :content "what about blue?"}
+ {:role "assistant", :content "The color that complements red is green."}
+ {:role "user", :content "what about blue?"}]
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+Sending interrupt.; Evaluation was interrupted
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+{:role "assistant", :content "The color that complements blue is orange."}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+{:role "assistant", :content "The color that complements blue is orange."}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+{:role "assistant", :content "So far, you have asked about three colors: red, blue, and the complement of blue."}
+clj꞉netnavi.plugins.chatgpt.external꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:52:11).
+; Unable to resolve symbol: input in this context
+clj꞉netnavi.core꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:52:11).
+; Unable to resolve symbol: input in this context
+clj꞉netnavi.core꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 
+; Syntax error compiling at (c:\Users\ccarroll\Documents\GitHub\Navi\src\netnavi\core.clj:52:11).
+; Unable to resolve symbol: input in this context
+clj꞉netnavi.core꞉> 
+#'netnavi.core/-main
+clj꞉netnavi.core꞉> 

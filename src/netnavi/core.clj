@@ -5,7 +5,8 @@
             [netnavi.plugins.chatgpt.gpt :as gpt]
             [netnavi.plugins.chatgpt.personalities.core :as personality]
             [netnavi.plugins.chatgpt.features :as features]
-              ; This should be changed to GPT installer
+            [netnavi.plugins.chatgpt.external :as external]
+            ; This should be changed to GPT installer
             [netnavi.plugins.chatgpt.installer :as installer])
   (:gen-class))
 
@@ -43,7 +44,17 @@
 (defn -main
   "Main entry for the program. command line args processed here"
   [& args]
-  (let [result (:question (first (cli args cli-opts)))]
-    (if-not (nil? result)
-      (println (gpt/quick-chat-with-assistant result))
+  (let [input (:question (first (cli args cli-opts)))]
+    (if-not (nil? input)
+      (do
+        (do
+          (external/init-external-assist)
+          (external/append-to-current-assistant-memory input)
+          (external/append-to-memory (gpt/format-prompt input))
+           ; This pulls from the global atomic :running-log. No need for input var
+          (let [temp (gpt/format-response (external/external-chat-with-assistant))]
+            (external/append-to-current-assistant-memory temp)
+            (external/append-to-memory temp)))
+           ; Print the result
+        (println @(:content (last @(:running-log external/assistant)))))
       (focused-session))))
