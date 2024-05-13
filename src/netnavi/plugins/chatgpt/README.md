@@ -1,1 +1,0 @@
-This is meant to be a bootstrapping plugin, to leverage on market functionality until such time as a competent open source replacement has been made
