@@ -2,6 +2,7 @@
   (:require [navi.plugins.cli.util :as util]
             [navi.base.chatbot.personalities.core :as personality]
             [navi.base.chatbot.core :as jan]
+            [clojure.tools.cli :refer [cli]]
             [navi.plugins.commands.features :as features]))
 
 (defn cli-loop
@@ -38,7 +39,13 @@
             (println util/line))))
     (recur)))
 
+(def cli-opts
+  ; The tricky part here is that :default only works if -q isn't flagged. -q with no value returns nil. set to nil for consistency
+  ["-q" "--question" "ask a question" :default nil])
+
 (defn -main
   [& args]
-  ;(cli-loop))
-  (pipeline-configurable-loop))
+    (let [result (:question (first (cli args cli-opts)))]
+     (if-not (nil? result)
+       (println (jan/extract-response (jan/chat result)))
+       (pipeline-configurable-loop))))
