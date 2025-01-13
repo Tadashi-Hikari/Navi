@@ -10,7 +10,8 @@
 
 ; make a new thread
 (defn make-new-thread []
-  (client/post "http://localhost:1337/v1/threads" {:content-type :json
+  ; I need to centralize this url
+  (client/post "http://192.168.68.70:7000" {:content-type :json
                                                    :form-params {:object "thread"
                                                                  :title "Thread title"
                                                                  :assistants ["jan"]
@@ -26,7 +27,8 @@
 ;(reset! current-thread (get-thread-id (make-new-thread)))
 
 (defn send-message [thread-id]
-  (client/post (str "http://localhost:1337/v1/threads/" thread-id "/messages") {:content-type :json
+  ; I need to centralize this url
+  (client/post (str "http://192.168.68.70:7000/v1/threads/" thread-id "/messages") {:content-type :json
                                                                                 :streaming? false
                                                                                 :form-params {:role "user"
                                                                                               :content "How does AI work? Explain it in simple terms."}}))

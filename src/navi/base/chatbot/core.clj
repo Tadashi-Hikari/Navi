@@ -9,7 +9,7 @@
     content))
 
 (defn chat [input]
-  (client/post "http://localhost:1337/v1/chat/completions" {:content-type :json
+  (client/post "http://192.168.68.70:7000/v1/chat/completions" {:content-type :json
                                                                              :form-params {:messages [{:content "You are a helpful assistant."
                                                                                                        :role "system"} {:content input
                                                                                                                         :role "user"}]

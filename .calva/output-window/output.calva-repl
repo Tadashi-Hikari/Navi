@@ -31,9 +31,30 @@ You can configure this with the setting:
 
 
 ; Jacking in...
+; Connecting using "Babashka" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /home/chris/Lab/Assistant/reference/Navi; bb --nrepl-server 42633)
+; Jacking in...
 ; Connecting using "Leiningen" project type.
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
 
-; Starting Jack-in Terminal: pushd c:\Users\ccarr\Lab\sandbox\Navi & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Starting Jack-in: (cd /home/chris/Lab/Assistant/reference/Navi; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:38737 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉navi.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉navi.core꞉> 
+; Jack-in done.
+clj꞉navi.core꞉> 
+#'navi.base.chatbot.core/chat
+clj꞉navi.base.chatbot.core꞉> 
+; nREPL Connection was closed

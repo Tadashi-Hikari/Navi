@@ -7,3 +7,5 @@
 ; - could do this when triggered to check on me, rather than constant monitoring
 ; check attached (bluetooth) devices & playing music (don't want it to interrput DJ at party!)
 ; send a message on my watch?
+
+; USE CRON, JUST SAVE TIME

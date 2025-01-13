@@ -17,7 +17,7 @@
 (defn hello-world []
   [:div
    [:h1 (:text @app-state)]
-   [:h3 "Edit this in src/webnavi/core.cljs and watch it change!"]])
+   [:h3 "Edit this in src/webnavi/core.cljs and watch it change! These are new words"]])
 
 (defn mount [el]
   (rdom/render [hello-world] el))

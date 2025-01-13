@@ -36,7 +36,7 @@
   (spit memory (str data "\n") :append true))
 
 (defn external-chat-with-assistant []
-  (get-in (api/create-chat-completion {:model "gpt-3.5-turbo"
+  (get-in (api/create-chat-completion {:model "llama-3.2-8b-instruct"
                                        :messages @(:running-log assistant)}) [:choices 0 :message :content]))
 
 ; current assistant is external/assistant, not gpt/assistant. Need to make this more clear
